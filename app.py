@@ -71,3 +71,4 @@ st.write("**Interactive Map Showing Crime Index**")
 
 st_folium(m, width=700, height=500)
 
+st.title('Team - Kavaach')
