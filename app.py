@@ -16,23 +16,23 @@ db = firestore.client()
 
 st.title('Crime Against Women Index - Kolkata')
 
-st.write('**If you have anything to report, please feel free to report**')
+#st.write('**If you have anything to report, please feel free to report**')
 
 #text = st.text_input('Enter your report here')
-'''
-reports = []
-if st.button('Submit'):
-    if text:
-        
-        doc_ref = db.collection('Reports').add({
-            'report': text,
-            'status': 'submitted'
-        })
-        
-        st.write('Your report has been recorded in Firestore')
-    else:
-        st.write('Please enter a report before submitting.')
- '''   
+
+#reports = []
+#if st.button('Submit'):
+ #   if text:
+  #      
+   #     doc_ref = db.collection('Reports').add({
+    #        'report': text,
+     #       'status': 'submitted'
+      #  })
+       # 
+        #st.write('Your report has been recorded in Firestore')
+    #else:
+     #   st.write('Please enter a report before submitting.')
+ 
 df_filtered = pd.read_csv('Final.csv')
 
 station_names = df_filtered['Police Station Name'].tolist()
